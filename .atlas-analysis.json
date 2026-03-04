@@ -1,0 +1,158 @@
+{
+  "projectType": "saas",
+  "projectName": "MinistryHub",
+  "projectDescription": "A professional church management platform for worship teams, member administration, and multi-site congregation coordination",
+  "theme": "almond",
+  "primaryColor": "#6366F1",
+  "lightColor": "#A5B4FC",
+  "darkColor": "#4338CA",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "User Guides",
+            "pages": [
+              "guides/administrators",
+              "guides/worship-leaders",
+              "guides/team-members"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/frontend",
+              "architecture/backend",
+              "architecture/database"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Features",
+        "groups": [
+          {
+            "group": "Core Modules",
+            "pages": [
+              "features/overview",
+              "features/multi-tenancy",
+              "features/worship-management",
+              "features/people-teams",
+              "features/calendar-meetings",
+              "features/attendance-tracking",
+              "features/notifications"
+            ]
+          },
+          {
+            "group": "Music & Worship",
+            "pages": [
+              "features/worship/songs-library",
+              "features/worship/chordpro-format",
+              "features/worship/setlists",
+              "features/worship/instruments"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Administration",
+        "groups": [
+          {
+            "group": "Setup & Configuration",
+            "pages": [
+              "admin/church-setup",
+              "admin/areas-teams",
+              "admin/user-management",
+              "admin/roles-permissions"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "admin/authentication",
+              "admin/jwt-tokens",
+              "admin/recaptcha"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "admin/deployment-guide",
+              "admin/environment-setup",
+              "admin/database-migration"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "api/overview",
+              "api/authentication",
+              "api/error-handling"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/auth",
+              "api/churches",
+              "api/areas",
+              "api/teams",
+              "api/people",
+              "api/songs",
+              "api/playlists",
+              "api/calendar",
+              "api/notifications",
+              "api/reports"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multi-tenant church management with role-based access control",
+    "Worship module with ChordPro song support and transposition",
+    "People and team management with hierarchical areas",
+    "Calendar and meeting planning with service orders",
+    "Attendance tracking and visitor logging",
+    "JWT-based authentication with reCAPTCHA v3 security",
+    "Internationalization support (Spanish, English, Portuguese)",
+    "Dark mode and glassmorphism UI design"
+  ],
+  "publicApiSurface": [
+    "POST /api/auth/login",
+    "GET /api/bootstrap",
+    "GET /api/churches",
+    "POST /api/churches/create",
+    "GET /api/areas",
+    "POST /api/areas/create",
+    "GET /api/teams",
+    "POST /api/teams/create",
+    "GET /api/people",
+    "POST /api/people/create",
+    "GET /api/songs",
+    "POST /api/songs/create",
+    "GET /api/playlists",
+    "POST /api/playlists/create",
+    "GET /api/calendar",
+    "POST /api/calendar/create",
+    "GET /api/notifications",
+    "GET /api/activities",
+    "GET /api/reports/stats"
+  ]
+}
